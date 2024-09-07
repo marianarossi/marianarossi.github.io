@@ -1,0 +1,128 @@
+@media screen and (min-width: 0) and (max-width: 329)
+{
+    /* not supported */
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px)
+{
+    /*  Celulares: com largura mínima de 320px e largura máxima de 480px. */
+
+        header
+    {
+        position: static;
+    }
+
+    nav
+    {
+        justify-content:space-between;
+        gap: 0rem;
+    } 
+
+    nav li
+    {
+        padding: 0.5rem;
+    }
+
+    .menu-lateral
+    {
+        position: static;
+        min-height: 0vh; 
+        width: 100vw;
+    }
+    
+    .menu-lateral li
+    {
+        margin: 0rem;
+        padding: 0.5rem;
+    }
+
+    main
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+    }
+    
+    .titulo
+    {
+        margin: 0rem 0rem 0rem .5rem;
+    }
+
+    .cards
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .botoes-estrutura
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    /* Tablets: com largura mínima de 481px e largura máxima de 768px.  */
+
+    .menu-lateral
+    {
+        position: relative;
+        min-height: 0vh; 
+        width: 100vw;
+        top: 4rem;
+    }
+    
+    .menu-lateral li
+    {
+        margin: 0rem;
+        padding: 0.5rem;
+    }
+
+    main
+    {
+        left: 0;
+        max-width: 100%;
+    }
+    
+    .titulo
+    {
+        margin: 0rem 0rem 0rem .5rem;
+    }
+
+    .cards
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .botoes-estrutura
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px)
+{
+    .menu-lateral
+    {
+        width: 23vw;
+        top: 4rem;
+    }
+
+    main
+    {
+        left: 23vw;
+        max-width: calc(100% - 23vw);
+    }
+
+    .cards i
+    {
+        font-size:4rem;
+    }
+
+    .dark-blue-square i
+    {
+        font-size: 1.5rem;
+    }
+}
